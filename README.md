@@ -1,4 +1,4 @@
-# Achei
+# Achei Buscador
 
 Busca de CEP, próximos feriados nacionais e bancos. Feito com React e [BrasilAPI](https://brasilapi.com.br/).
 

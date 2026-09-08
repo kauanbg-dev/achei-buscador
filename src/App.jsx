@@ -167,7 +167,7 @@ export default function App() {
     <div className="page">
       <header className="top">
         <div>
-          <p className="brand">Achei</p>
+          <p className="brand">Achei Buscador</p>
           <p className="tagline">CEP, feriados e bancos com a BrasilAPI</p>
         </div>
         <a className="source" href="https://brasilapi.com.br/" target="_blank" rel="noopener noreferrer">
