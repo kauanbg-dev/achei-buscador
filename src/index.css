@@ -1,0 +1,405 @@
+:root {
+  font-family: Inter, Segoe UI, system-ui, sans-serif;
+  color: #e8eef8;
+  background: #0b0f19;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(0, 224, 255, 0.14), transparent 32%),
+    #0b0f19;
+}
+
+.page {
+  width: min(1100px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 28px 0 64px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.brand {
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #00e0ff;
+}
+
+.tagline,
+.hero p,
+.card p,
+footer {
+  color: #b7c3d9;
+}
+
+.tagline {
+  margin: 4px 0 0;
+  font-size: 0.95rem;
+}
+
+.source {
+  color: #00e0ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero {
+  margin: 36px 0 28px;
+}
+
+.hero h1,
+.card h2 {
+  margin: 0 0 10px;
+  color: #fff;
+}
+
+.search {
+  margin-top: 22px;
+}
+
+.search label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.search-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.field {
+  flex: 1;
+  min-width: 180px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: #fff;
+  font: inherit;
+}
+
+.field:focus {
+  outline: 2px solid #00e0ff;
+  outline-offset: 2px;
+}
+
+.btn {
+  border: 0;
+  border-radius: 12px;
+  padding: 12px 18px;
+  background: #00e0ff;
+  color: #081018;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn.ghost {
+  margin-top: 0;
+  background: transparent;
+  color: #00e0ff;
+  border: 1px solid rgba(0, 224, 255, 0.35);
+}
+
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.history {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.chip {
+  border: 1px solid rgba(0, 224, 255, 0.28);
+  background: rgba(0, 224, 255, 0.08);
+  color: #d4dcef;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.chip:hover,
+.chip:focus-visible {
+  color: #00e0ff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.card {
+  padding: 22px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.card.muted {
+  opacity: 0.85;
+}
+
+.cal-block {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.upcoming {
+  margin-top: 12px;
+}
+
+.upcoming li {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.upcoming-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  width: 100%;
+  margin: 0;
+  padding: 8px 0;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.upcoming-item span {
+  text-align: right;
+  color: #d5deee;
+}
+
+.upcoming-item:hover span,
+.upcoming-item:focus-visible span {
+  color: #00e0ff;
+}
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.cal-head h2 {
+  margin: 0;
+  font-size: 1.15rem;
+  text-align: center;
+  flex: 1;
+}
+
+.cal-nav {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: #e8eef8;
+  border-radius: 10px;
+  font: inherit;
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.cal-nav:hover,
+.cal-nav:focus-visible {
+  color: #00e0ff;
+  border-color: rgba(0, 224, 255, 0.4);
+}
+
+.cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  margin-top: 12px;
+}
+
+.cal-dow {
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #7f8ba3;
+  padding-bottom: 4px;
+}
+
+.cal-day {
+  aspect-ratio: 1;
+  min-height: 32px;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: #e8eef8;
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.cal-day.is-empty {
+  cursor: default;
+  pointer-events: none;
+}
+
+.cal-day.is-holiday {
+  background: rgba(0, 224, 255, 0.18);
+  color: #9ff3ff;
+  font-weight: 700;
+}
+
+.cal-day.is-special,
+.cal-day.is-both {
+  background: rgba(255, 184, 92, 0.16);
+  color: #ffd19a;
+  font-weight: 700;
+}
+
+.cal-day.is-both {
+  box-shadow: inset 0 0 0 1px rgba(0, 224, 255, 0.45);
+}
+
+.cal-day.is-today {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.45);
+}
+
+.cal-day.is-selected {
+  outline: 2px solid #00e0ff;
+  outline-offset: 1px;
+}
+
+.cal-day:not(.is-empty):hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.cal-day.is-holiday:hover {
+  background: rgba(0, 224, 255, 0.28);
+}
+
+.cal-day.is-special:hover,
+.cal-day.is-both:hover {
+  background: rgba(255, 184, 92, 0.28);
+}
+
+.cal-detail {
+  margin: 14px 0 0;
+  min-height: 2.4em;
+  color: #d5deee;
+  font-size: 0.92rem;
+}
+
+.cal-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 10px 0 0;
+  font-size: 0.78rem;
+  color: #8b97ad;
+}
+
+.cal-legend .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 99px;
+  display: inline-block;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.cal-legend .dot.holiday {
+  background: #00e0ff;
+}
+
+.cal-legend .dot.special {
+  background: #ffb85c;
+}
+
+.kicker {
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  color: #00e0ff;
+  font-weight: 700;
+}
+
+.details,
+.list {
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.details li,
+.list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.details span,
+.list span {
+  text-align: right;
+  color: #d5deee;
+}
+
+.status {
+  margin: 14px 0 0;
+  font-size: 0.95rem;
+}
+
+.status-error {
+  color: #ff8fa0;
+}
+
+footer {
+  margin-top: 36px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
