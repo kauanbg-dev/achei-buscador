@@ -1,12 +1,12 @@
 # Achei Buscador
 
-Consulta de **CEP**, **feriados** e **bancos** com a [BrasilAPI](https://brasilapi.com.br/). Feito em React, no mesmo visual do portfólio (fundo escuro e ciano).
+Consulta de CEP, feriados e bancos com a [BrasilAPI](https://brasilapi.com.br/). Feito em React, no visual do portfólio.
 
-**Site:** [achei-buscador.vercel.app](https://achei-buscador.vercel.app/)
+**Ao vivo:** [achei-buscador.vercel.app](https://achei-buscador.vercel.app/)
 
 ![Tela do Achei Buscador](./img/preview.png)
 
-## O que faz
+## Funcionalidades
 
 - Busca de endereço por CEP, com cópia e link para o mapa
 - Histórico dos últimos CEPs no navegador
@@ -19,3 +19,10 @@ Consulta de **CEP**, **feriados** e **bancos** com a [BrasilAPI](https://brasila
 - React + Vite
 - CSS
 - [BrasilAPI](https://brasilapi.com.br/)
+
+## Como rodar
+
+```bash
+npm install
+npm run dev
+```
