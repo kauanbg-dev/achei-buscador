@@ -1,7 +1,7 @@
 :root {
   font-family: Inter, Segoe UI, system-ui, sans-serif;
   color: #e8eef8;
-  background: #0b0f19;
+  background: #07151a;
   line-height: 1.5;
 }
 
@@ -13,8 +13,8 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    radial-gradient(circle at top left, rgba(0, 224, 255, 0.14), transparent 32%),
-    #0b0f19;
+    radial-gradient(circle at top left, rgba(45, 212, 191, 0.16), transparent 32%),
+    #07151a;
 }
 
 .page {
@@ -35,7 +35,7 @@ body {
   font-weight: 800;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #00e0ff;
+  color: #2dd4bf;
   line-height: 1.2;
 }
 
@@ -52,7 +52,7 @@ footer {
 }
 
 .source {
-  color: #00e0ff;
+  color: #2dd4bf;
   text-decoration: none;
   font-weight: 600;
 }
@@ -95,7 +95,7 @@ footer {
 }
 
 .field:focus {
-  outline: 2px solid #00e0ff;
+  outline: 2px solid #2dd4bf;
   outline-offset: 2px;
 }
 
@@ -103,8 +103,8 @@ footer {
   border: 0;
   border-radius: 12px;
   padding: 12px 18px;
-  background: #00e0ff;
-  color: #081018;
+  background: #2dd4bf;
+  color: #042f2e;
   font: inherit;
   font-weight: 700;
   cursor: pointer;
@@ -121,8 +121,8 @@ footer {
 .btn.ghost {
   margin-top: 0;
   background: transparent;
-  color: #00e0ff;
-  border: 1px solid rgba(0, 224, 255, 0.35);
+  color: #2dd4bf;
+  border: 1px solid rgba(45, 212, 191), 0.35);
 }
 
 .card-actions {
@@ -140,8 +140,8 @@ footer {
 }
 
 .chip {
-  border: 1px solid rgba(0, 224, 255, 0.28);
-  background: rgba(0, 224, 255, 0.08);
+  border: 1px solid rgba(45, 212, 191), 0.28);
+  background: rgba(45, 212, 191), 0.08);
   color: #d4dcef;
   border-radius: 999px;
   padding: 6px 12px;
@@ -152,7 +152,7 @@ footer {
 
 .chip:hover,
 .chip:focus-visible {
-  color: #00e0ff;
+  color: #2dd4bf;
 }
 
 .grid {
@@ -211,8 +211,10 @@ footer {
 
 .upcoming-item:hover span,
 .upcoming-item:focus-visible span {
-  color: #00e0ff;
+  color: #2dd4bf;
 }
+
+.cal-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -242,8 +244,8 @@ footer {
 
 .cal-nav:hover,
 .cal-nav:focus-visible {
-  color: #00e0ff;
-  border-color: rgba(0, 224, 255, 0.4);
+  color: #2dd4bf;
+  border-color: rgba(45, 212, 191), 0.4);
 }
 
 .cal-grid {
@@ -281,8 +283,8 @@ footer {
 }
 
 .cal-day.is-holiday {
-  background: rgba(0, 224, 255, 0.18);
-  color: #9ff3ff;
+  background: rgba(45, 212, 191), 0.18);
+  color: #99f6e4;
   font-weight: 700;
 }
 
@@ -294,7 +296,7 @@ footer {
 }
 
 .cal-day.is-both {
-  box-shadow: inset 0 0 0 1px rgba(0, 224, 255, 0.45);
+  box-shadow: inset 0 0 0 1px rgba(45, 212, 191), 0.45);
 }
 
 .cal-day.is-today {
@@ -302,7 +304,7 @@ footer {
 }
 
 .cal-day.is-selected {
-  outline: 2px solid #00e0ff;
+  outline: 2px solid #2dd4bf;
   outline-offset: 1px;
 }
 
@@ -311,7 +313,7 @@ footer {
 }
 
 .cal-day.is-holiday:hover {
-  background: rgba(0, 224, 255, 0.28);
+  background: rgba(45, 212, 191), 0.28);
 }
 
 .cal-day.is-special:hover,
@@ -345,7 +347,7 @@ footer {
 }
 
 .cal-legend .dot.holiday {
-  background: #00e0ff;
+  background: #2dd4bf;
 }
 
 .cal-legend .dot.special {
@@ -357,7 +359,7 @@ footer {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 0.75rem;
-  color: #00e0ff;
+  color: #2dd4bf;
   font-weight: 700;
 }
 
